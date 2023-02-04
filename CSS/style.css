@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url("/Images/new\ bg.jpg");
+    background-color: rgba(0, 0, 0, 0.836);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.centerBlock {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    padding-top: 50px;
+    /* border-bottom: 1px solid black; */
+    /* background-color: rgba(255, 255, 255, 0.153); */
+    padding-bottom: 20px;
+}
+
+.imgIcon {
+    height: 50px;
+}
+
+.bg-res {
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 50px;
+    padding: 20px;
+}
+
+.search {
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.error {
+    color: red;
+}
+
+.nameOfWord {
+    font-family: 'Kalam', cursive;
+}
+
+.historyName{
+    font-size: 39px;
+    text-shadow: 2px 3px 7px rgb(255, 252, 85);
+}
+
+.wordName {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 1px 4px rgb(255, 252, 85);
+}
+
+.results {
+    background-color: rgb(248, 238, 238, 0.45);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hide1 {
+    display: none;
+}
+
+.hisFlex {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.hisItem {
+    width: 15%;
+    text-align: center;
+    background-color: rgba(202, 255, 252, 0.332);
+    margin: 5px;
+    font-size: 13px;
+    color: whitesmoke;
+    /* border: 1px solid rgb(65, 4, 4); */
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgb(219, 255, 59);
+}
+
+.deleteBtn {
+    background-color: #f1f1f100;
+    border: none;
+}
+
+.flex2 {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.material-icons {
+    scale: 0.7;
+}
+
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0000002c;
+  }
+  
+  li[class="nav"] {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  li[class="nav"]:hover {
+    background-color: #111;
+  }
