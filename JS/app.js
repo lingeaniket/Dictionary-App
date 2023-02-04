@@ -1,6 +1,10 @@
 var result;
 var fId = 0;
-localStorage.setItem('history', "");
+
+if(localStorage.getItem('history') === null){
+    localStorage.setItem('history', "");
+}
+
 
 function search() {
     let word = document.getElementById('searchWord').value;
