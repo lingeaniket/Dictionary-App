@@ -97,14 +97,19 @@ body, html {
 .hisItem {
     width: 15%;
     text-align: center;
-    background-color: rgba(202, 255, 252, 0.332);
+    background-color: rgba(7, 100, 95, 0.332);
     margin: 5px;
     font-size: 13px;
     color: whitesmoke;
     /* border: 1px solid rgb(65, 4, 4); */
     border-radius: 5px;
-    padding: 5px;
+    padding: 4px;
     box-shadow: 2px 2px 5px rgb(219, 255, 59);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*justify-content:flex-end; */
 }
 
 .hisInnerItem {
@@ -115,6 +120,7 @@ body, html {
 .deleteBtn {
     background-color: #f1f1f100;
     border: none;
+    
 }
 
 .flex2 {
