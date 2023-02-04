@@ -107,6 +107,11 @@ body, html {
     box-shadow: 2px 2px 5px rgb(219, 255, 59);
 }
 
+.hisInnerItem {
+    font-size: 13px;
+    color: whitesmoke;
+}
+
 .deleteBtn {
     background-color: #f1f1f100;
     border: none;
