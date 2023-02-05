@@ -92,7 +92,7 @@ function getWord(data) {
 
         var errDiv3 = document.createElement('div');
         errDiv3.innerHTML = "Resolution: -"
-        
+
         var resolutionDiv = document.createElement('div');
         resolutionDiv.innerHTML = data.resolution;
         errDiv3.appendChild(resolutionDiv);
