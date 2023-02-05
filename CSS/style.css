@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     background-image: url("/Images/newbg.jpg");
@@ -13,7 +14,7 @@ body, html {
 }
 
 .bg-res {
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     border: 3px solid #f1f1f1;
     border-radius: 10px;
@@ -47,7 +48,7 @@ body, html {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color:white;
+    color: white;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -62,7 +63,7 @@ body, html {
     font-family: 'Kalam', cursive;
 }
 
-.historyName{
+.historyName {
     font-size: 39px;
     text-shadow: 2px 3px 7px rgb(255, 252, 85);
 }
@@ -86,7 +87,7 @@ body, html {
 }
 
 .hisFlex {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -118,18 +119,18 @@ body, html {
 
 .flex2 {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .material-icons {
     scale: 0.7;
 }
 
-form{
+form {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
     width: 50px;
     height: 50px;
@@ -140,11 +141,12 @@ form{
     padding: 5px;
 }
 
-input{
+input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;;
+    width: 100%;
+    ;
     height: 42.5px;
     line-height: 30px;
     outline: 0;
@@ -155,7 +157,7 @@ input{
     padding: 0 20px;
 }
 
-.fa{
+.fa {
     box-sizing: border-box;
     padding: 10px;
     width: 42.5px;
@@ -171,18 +173,18 @@ input{
 }
 
 form:hover,
-form:valid{
+form:valid {
     width: 200px;
     cursor: pointer;
 }
 
 form:hover input,
-form:valid input{
+form:valid input {
     display: block;
 }
 
 form:hover .fa,
-form:valid .fa{
+form:valid .fa {
     background: #07051a;
     color: white;
 }
@@ -194,7 +196,7 @@ ul {
     overflow: hidden;
     background-color: #0000002c;
 }
-  
+
 li[class="nav"] {
     float: right;
     display: block;
