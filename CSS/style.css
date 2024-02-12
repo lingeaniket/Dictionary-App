@@ -19,6 +19,10 @@ html {
     padding: 20px;
 }
 
+.material-icons {
+    cursor: pointer;
+}
+
 .centerBlock {
     display: flex;
     justify-content: center;
@@ -83,7 +87,6 @@ html {
 
 .hisFlex {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -95,8 +98,7 @@ html {
     font-size: 13px;
     color: whitesmoke;
     border-radius: 5px;
-    padding: 4px;
-    box-shadow: 2px 2px 5px rgb(219, 255, 59);
+    padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
