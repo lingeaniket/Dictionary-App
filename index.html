@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Dictionary</title>
+        <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dictionary</title>
-    <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-
-<body>
-    <div>
-        <ul>
-            <li onclick="historyBtn()" id="hisBtn" class="nav">History
+    <body>
+        <div class="app01">
+            <div onclick="historyBtn()" id="hisBtn" class="nav">
+                History
                 <i class="material-icons">history</i>
-            </li>
-            <li onclick="searchPage()" id="serBtn" class="hide1 nav">Back To Search
+            </div>
+            <div onclick="searchPage()" id="serBtn" class="hide1 nav">
+                Back To Search
                 <i class="material-icons">search</i>
-            </li>
-        </ul>
-    </div>
-
-    <div class="name">
-        My Dictionary
-        <img class="imgIcon" src="/Images/dict img 2.png">
-    </div>
-    <br>
-    <div class="centerBlock">
-        <div id="main">
-            <div class="flex" id="id1" style="width: 250px">
-                <div>
-                    <label for="searchWord" id="search" style="color: aliceblue;">Search for new word</label>
-                </div>
-            </div>
-            <br>
-            <div class="historyFlex hide1" id="id2">
-                <div class="nameOfWord historyName">History</div>
-            </div>
-            <br>
-            <div id="id3">
-                <form action="">
-                    <input type="search" required name="searchWord" id="searchWord" placeholder="Enter word">
-                    <i class="fa fa-search" onclick="search()"></i>
-                </form>
             </div>
         </div>
-    </div>
-    <div id="results"></div>
-    <div id="historyPage" class="hide1 hisFlex"></div>
 
-    <script src="./JS/app.js"></script>
-</body>
+        <div class="name">
+            My Dictionary
+            <img class="imgIcon" src="/Images/dict img 2.png" />
+        </div>
+        <br />
+        <div class="centerBlock">
+            <div id="main">
+                <div class="flex" id="id1" style="width: 250px">
+                    <div>
+                        <label for="searchWord" id="search" style="color: aliceblue">Search for new word</label>
+                    </div>
+                </div>
+                <br />
+                <div class="historyFlex hide1" id="id2">
+                    <div class="nameOfWord historyName">History</div>
+                </div>
+                <br />
+                <div id="id3">
+                    <form onsubmit="search(event)" action="">
+                        <div class="search-box">
+                            <input type="search" required class="search-input" name="searchWord" id="searchWord" placeholder="Enter word" />
+                            <button type="submit" class="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="results"></div>
+        <div id="historyPage" class="hide1 hisFlex"></div>
 
+        <script src="./JS/app.js"></script>
+    </body>
 </html>
